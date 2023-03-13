@@ -1,13 +1,9 @@
-
-.heading
-{
-font-size: 23px;
-width: 100%;
-margin: 0px;
+.heading {
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
 }
 
-#status
-{
-font-size: 18px;
+#status {
+    font-size: 18px;
 }
-
