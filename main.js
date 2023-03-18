@@ -1,5 +1,5 @@
 var imagen = "";
-var objeto = [];
+var objetos = [];
 var status = "";
 function setup() {
     canvas = createCanvas(640, 420);
@@ -31,7 +31,7 @@ function listo() {
 }
 function obtenerResultados(error, resultados) {
     if (!error) {
-        objetos = resultado;
+        objetos = resultados;
         console.log(resultados);
     }
 }
