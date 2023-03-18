@@ -2,7 +2,7 @@ var imagen = "";
 var objeto = [];
 var status = "";
 function setup() {
-    canavas = createCanvas(640, 420);
+    canvas = createCanvas(640, 420);
     canvas.center();
     detector = ml5.objectDetector("cocossd", listo);
 }
