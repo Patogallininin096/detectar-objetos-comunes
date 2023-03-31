@@ -12,13 +12,13 @@ function preload() {
 function draw() {
     image(imagen, 0, 0, 650, 420);
     if (status != "") {
-        for (i = 0; i < objetos.legth; i++) {
+        for (i = 0; i < objetos.length; i++) {
             objetoActual = objetos[i];
             probabilidad = floor(objetoActual.confidence * 100);
             mensaje = objetoActual.label + " " + probabilidad + "%";
             noFill();
             stroke("red");
-            text(mesaje, objetoActual.x + 15, objetoActual.y + 15);
+            text(mensaje, objetoActual.x + 15, objetoActual.y + 15);
             rect(objetoActual.x, objetoActual.y, objetoActual.width, objetoActual.height);
         }
         document.getElementById("status").innerHTML = "Objetos detectados"
